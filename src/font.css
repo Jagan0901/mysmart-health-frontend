@@ -1,0 +1,148 @@
+.fw_100{
+    font-weight: 100;
+}
+
+.fw_200 {
+    font-weight: 200;
+}
+
+.fw_300 {
+    font-weight: 300;
+}
+
+.fw_400 {
+    font-weight: 400;
+}
+
+.fw_500 {
+    font-weight: 500;
+}
+
+.fw_600 {
+    font-weight: 600;
+}
+
+.fw_700 {
+    font-weight: 700;
+}
+
+.fw_800 {
+    font-weight: 800;
+}
+
+.fw_900 {
+    font-weight: 900;
+}
+
+.fw_1000 {
+    font-weight: 1000;
+}
+
+.fs_10 {
+    font-size: 10px;
+}
+
+.fs_12 {
+    font-size: 12px;
+}
+
+.fs_13 {
+    font-size: 13px;
+}
+
+.fs_14 {
+    font-size: 14px;
+}
+
+.fs_15 {
+    font-size: 15px;
+}
+
+.fs_16 {
+    font-size: 16px;
+}
+
+.fs_18 {
+    font-size: 18px;
+}
+
+.fs_20 {
+    font-size: 20px;
+}
+
+.fs_24{
+    font-size: 24px;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 767px) {
+    .fs_sm_10 {
+            font-size: 10px !important;
+        }
+
+                .fs_sm_13 {
+                    font-size: 13px !important;
+                }
+
+                                .fs_sm_15 {
+                                    font-size: 15px !important;
+                                }
+
+    .w_sm_100{
+        width: 100% !important;
+    }
+    
+    .me_sm_10{
+        right: 10% !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .fs_md_10{
+        font-size: 10px;
+    }
+
+        .fs_md_13 {
+            font-size: 13px;
+        }
+
+        .w_md_50 {
+            width: 50% !important;
+        }
+
+                .w_md_25 {
+                    width: 25% !important;
+                }
+
+                                .me_md_7 {
+                                    right: 7% !important;
+                                }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .fs_lg_10 {
+            font-size: 10px;
+        }
+
+         .w_lg_40 {
+             width: 40% !important;
+         }
+
+                 .w_lg_25 {
+                     width: 25% !important;
+                 }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .fs_xl_10 {
+            font-size: 10px;
+        }
+
+                .w_xl_25 {
+                    width: 25% !important;
+                }
+}

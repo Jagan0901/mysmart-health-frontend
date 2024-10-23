@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+body{
+    font-family: "Montserrat", sans-serif !important;
+    background-color: whitesmoke;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.full-height{
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.semi-circle{
+    border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 30%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    /* font-family: 'Montserrat', sans-serif !important; */
 }
 
-.App-link {
-  color: #61dafb;
+.time-slots {
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.time-slot-btn {
+    background-color: #3182CE;
+    /* Primary color */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Montserrat', sans-serif !important;
+    /* Ensure using Montserrat */
+    cursor: pointer;
+}
+
+.time-slot-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Override weekend styles to remove red color */
+.react-calendar__month-view__days__day--weekend {
+    color: #333333 !important;
+    font-weight: 500 !important;
+    /* Inherit the normal text color */
+}
+
+
+/* Apply Montserrat font to the entire calendar */
+.react-calendar {
+    font-family: 'Montserrat', sans-serif !important;
+    /* Ensure Montserrat is applied globally */
+}
+
+/* Customize the calendar header and day name font */
+.react-calendar__navigation button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #484848;
+    /* Optional: make it bold */
+}
+
+.react-calendar__month-view__weekdays__weekday{
+    font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #666666;
+        text-decoration: none !important;
+}
+
+/* Customize individual date font */
+.react-calendar__tile {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    /* color: #333333 ; */
+}
+
+/* Remove default outline for selected date and add custom styling */
+.react-calendar__tile--active {
+    background-color: #1F2587 !important;
+    border-radius: 50%;
+    /* Optional: Your preferred color for the selected date */
+    color: white;
+}
+
+/* On hover, add styles for date */
+.react-calendar__tile:enabled:hover {
+    background-color: #E2E8F0;
+    /* Optional: Light background on hover */
+    color: #2D3748;
+    /* Optional: Darker text on hover */
+}
+
+
+.detail-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Align items vertically in the center */
+}
+
+.detail-label {
+    margin-right: 1rem;
+    /* Adjust spacing as needed */
+    text-align: right;
+    /* Right align the labels */
+    width: 150px;
+    /* Set a fixed width for consistent alignment */
+}
+
+.detail-colon {
+    margin-right: 0.5rem;
+    /* Space between colon and value */
+}
+
+.detail-value {
+    margin-left: 0.5rem;
+    /* Space between colon and value */
 }
